@@ -572,12 +572,12 @@ export declare abstract class Model<T extends Model<T>> extends Hooks {
   /**
    * Get the value of the underlying data value
    */
-  getDataValue(key: FilteredModelAttributeKeys<this>): any;
+  getDataValue(key: FilteredModelAttributeKeys<T>): any;
 
   /**
    * Update the underlying data value
    */
-  setDataValue(key: FilteredModelAttributeKeys<this>, value: any): void;
+  setDataValue(key: FilteredModelAttributeKeys<T>, value: any): void;
 
   /**
    * If no key is given, returns all values of the instance, also invoking virtual getters.
